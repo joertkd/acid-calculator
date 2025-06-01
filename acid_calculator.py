@@ -64,6 +64,7 @@ proton_count = {"Monoprotic (1 H⁺)": 1, "Diprotic (2 H⁺)": 2, "Triprotic (3 
 
 # Core calculations
 H_target = 10 ** (-target_pH)
+initial_pH = st.number_input("Initial pH of glyphosate mixture", value=5.5)
 H_initial = 10 ** (-initial_pH)
 delta_H = (H_target - H_initial) * V_solution * buffer_factor  # mol of H+ needed
 
